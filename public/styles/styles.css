@@ -1,5 +1,20 @@
 .result-card {
-  width: 600px;
+  margin-top: 200px;
+  width: 800px;
   height: 400px; }
+  .result-card .cardHeader {
+    width: 100%; }
+    .result-card .cardHeader .title {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 20px; }
+    .result-card .cardHeader .subtitle {
+      font-size: 14px; }
+  .result-card .suppliers div {
+    float: left;
+    margin-right: 20px; }
+  .result-card .shortlist {
+    float: right; }
   .result-card .title {
+    float: left;
     width: 100%; }

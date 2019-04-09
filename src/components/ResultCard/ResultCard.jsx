@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import * as ReactBootstrap from "react-bootstrap";
 import Title from "./Title";
 import Suppliers from "./Suppliers";
 
@@ -8,7 +9,12 @@ class ResultCard extends Component {
     return (
       <div className="result-card">
         <Title />
-        <Suppliers />
+        <div className="supplier-container">
+          <Suppliers />
+          <ReactBootstrap.Button className="shortlist" variant="success">
+            Shortlist
+          </ReactBootstrap.Button>
+        </div>
       </div>
     );
   }

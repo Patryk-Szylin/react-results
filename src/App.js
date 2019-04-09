@@ -6,8 +6,10 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <ResultCard />
+      <div className="App container">
+        <div className="row">
+          <ResultCard />
+        </div>
       </div>
     );
   }
