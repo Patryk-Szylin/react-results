@@ -8,8 +8,8 @@ class Suppliers extends Component {
     return (
       <div className="supplier-container">
         <div className="suppliers">
-          <div>thomas Cook</div>
-          <div>Manos</div>
+          <div className="supplier-logo TOP" />
+          <div className="supplier-logo MAN" />
         </div>
         <CardSeperator />
         <div className="ratings">

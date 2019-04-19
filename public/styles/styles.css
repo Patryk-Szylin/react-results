@@ -14,7 +14,7 @@ body {
   font-family: Nunito; }
   .result-card .card-seperator {
     border-top: thin solid #e9e9e9;
-    margin: 10px 0; }
+    margin: 5px 0; }
   .result-card .shortlist-button {
     position: absolute;
     top: 20px;
@@ -41,7 +41,7 @@ body {
     color: #333500;
     font-weight: bold;
     padding: 10px;
-    bottom: 30px;
+    bottom: 50px;
     border-radius: 5px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.12) 0 0 2px, rgba(0, 0, 0, 0.24) 0 2px 2px;
@@ -67,7 +67,8 @@ body {
       position: relative;
       padding: 20px; }
       .result-card .col-lg-6.card-content .cardHeader {
-        width: 100%; }
+        width: 100%;
+        margin-bottom: 15px; }
         .result-card .col-lg-6.card-content .cardHeader .title {
           font-size: 16px;
           font-weight: bold;
@@ -78,6 +79,29 @@ body {
         overflow: auto; }
         .result-card .col-lg-6.card-content .supplier-container .suppliers {
           height: 24px; }
+          .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo {
+            height: 20px;
+            overflow: hidden;
+            width: 70px;
+            float: left; }
+            .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo.AIR {
+              background-image: url("../Images/SupplierLogos/airtours.svg"); }
+            .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo.BAL {
+              background-image: url("../Images/SupplierLogos/balkan.svg"); }
+            .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo.FCH {
+              background-image: url("../Images/SupplierLogos/first-choice.svg"); }
+            .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo.SER {
+              background-image: url("../Images/SupplierLogos/gambia-experience.svg"); }
+            .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo.MAN {
+              background-image: url("../Images/SupplierLogos/manos.svg"); }
+            .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo.RED {
+              background-image: url("../Images/SupplierLogos/red-sea.svg"); }
+            .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo.TCH {
+              background-image: url("../Images/SupplierLogos/thomas-cook.svg"); }
+            .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo.OLY {
+              background-image: url("../Images/SupplierLogos/olympic.svg"); }
+            .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo.TOP, .result-card .col-lg-6.card-content .supplier-container .suppliers .supplier-logo.TUI {
+              background-image: url("../Images/SupplierLogos/tui.svg"); }
           .result-card .col-lg-6.card-content .supplier-container .suppliers div {
             float: left;
             margin-right: 20px; }
