@@ -19,6 +19,31 @@ body {
     margin: 10px 0;
   }
 
+  .shortlist-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 14px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 0 2px, rgba(0, 0, 0, 0.24) 0 2px 2px;
+    border-radius: 20px;
+    background-color: #de0ba0;
+    transition: all ease 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #c50087;
+    }
+
+    .shortlist-icon {
+      background: url(../Images/shortlist.svg);
+      width: 16px;
+      height: 16px;
+      float: left;
+      margin-right: 10px;
+    }
+  }
+
   .view-details-button {
     position: absolute;
     right: 20px;
@@ -29,7 +54,13 @@ body {
     bottom: 30px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.12) 0 0 2px, rgba(0, 0, 0, 0.24) 0 2px 2px !important;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 0 2px, rgba(0, 0, 0, 0.24) 0 2px 2px;
+    text-decoration: none;
+    transition: all ease 0.2s;
+
+    &:hover {
+      background-color: #a8d100;
+    }
   }
 
   .low-availablity {
@@ -195,12 +226,6 @@ body {
           }
         }
       }
-    }
-
-    .shortlist-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
     }
   }
 }

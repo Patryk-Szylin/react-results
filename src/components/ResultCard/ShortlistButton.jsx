@@ -5,9 +5,10 @@ class ShortlistButton extends Component {
   state = {};
   render() {
     return (
-      <ReactBootstrap.Button className="shortlist-button" variant="success">
+      <div className="shortlist-button">
+        <div className="shortlist-icon" />
         Shortlist
-      </ReactBootstrap.Button>
+      </div>
     );
   }
 }
