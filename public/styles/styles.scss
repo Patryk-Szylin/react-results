@@ -1,35 +1,120 @@
+body {
+  background-color: #e2e2e2;
+}
+
 .result-card {
   margin-top: 200px;
-  width: 800px;
-  height: 400px;
+  width: 814px;
+  height: 351px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.12) !important;
+  max-width: 1140px;
 
-  .cardHeader {
-    width: 100%;
-
-    .title {
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 20px;
-    }
-
-    .subtitle {
-      font-size: 14px;
+  .card-image {
+    img {
+      height: 351px;
     }
   }
 
-  .suppliers {
-    div {
-      float: left;
-      margin-right: 20px;
+  .col-lg-6 {
+    padding: 0px;
+
+    &.card-content {
+      background-color: #fff;
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+
+      .cardHeader {
+        width: 100%;
+
+        .title {
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 20px;
+        }
+
+        .subtitle {
+          font-size: 14px;
+        }
+      }
+      .supplier-container {
+        height: 40px;
+
+        .suppliers {
+          height: 24px;
+          div {
+            float: left;
+            margin-right: 20px;
+          }
+        }
+
+        .ratings {
+          .supplier-rating {
+            height: 18px;
+            float: left;
+
+            .starRating {
+              width: 18px;
+              height: 18px;
+
+              float: left;
+              background-image: url("../Images/StarRating/star-icon.svg");
+              background-repeat: no-repeat;
+
+              &.lit {
+                background-image: url("../Images/StarRating/star-icon-enabled.svg");
+                background-repeat: no-repeat;
+              }
+            }
+          }
+
+          .trip-advisor-rating {
+            float: left;
+            margin-left: 10px;
+            font-size: 10px;
+
+            span {
+              margin-left: 5px;
+            }
+
+            .trip-advisor {
+              width: 16px;
+              height: 16px;
+              float: left;
+
+              &-logo {
+                background-image: url("../Images/TripAdvisorRating/trip-advisor-logo.svg");
+                background-repeat: no-repeat;
+                width: 28px;
+                height: 16px;
+                float: left;
+                margin: 0px 5px 0px 0px;
+              }
+
+              &.full {
+                background-image: url("../Images/TripAdvisorRating/trip-advisor-full.svg");
+              }
+
+              &.half {
+                background-image: url("../Images/TripAdvisorRating/trip-advisor-half.svg");
+              }
+
+              &.empty {
+                background-image: url("../Images/TripAdvisorRating/trip-advisor-empty.svg");
+              }
+            }
+          }
+        }
+      }
     }
-  }
 
-  .shortlist {
-    float: right;
-  }
-
-  .title {
-    float: left;
-    width: 100%;
+    .shortlist-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
   }
 }

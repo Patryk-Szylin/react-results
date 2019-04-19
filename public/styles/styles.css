@@ -1,20 +1,75 @@
+body {
+  background-color: #e2e2e2; }
+
 .result-card {
   margin-top: 200px;
-  width: 800px;
-  height: 400px; }
-  .result-card .cardHeader {
-    width: 100%; }
-    .result-card .cardHeader .title {
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 20px; }
-    .result-card .cardHeader .subtitle {
-      font-size: 14px; }
-  .result-card .suppliers div {
-    float: left;
-    margin-right: 20px; }
-  .result-card .shortlist {
-    float: right; }
-  .result-card .title {
-    float: left;
-    width: 100%; }
+  width: 814px;
+  height: 351px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.12) !important;
+  max-width: 1140px; }
+  .result-card .card-image img {
+    height: 351px; }
+  .result-card .col-lg-6 {
+    padding: 0px; }
+    .result-card .col-lg-6.card-content {
+      background-color: #fff;
+      overflow: hidden;
+      position: relative;
+      padding: 20px; }
+      .result-card .col-lg-6.card-content .cardHeader {
+        width: 100%; }
+        .result-card .col-lg-6.card-content .cardHeader .title {
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 20px; }
+        .result-card .col-lg-6.card-content .cardHeader .subtitle {
+          font-size: 14px; }
+      .result-card .col-lg-6.card-content .supplier-container {
+        height: 40px; }
+        .result-card .col-lg-6.card-content .supplier-container .suppliers {
+          height: 24px; }
+          .result-card .col-lg-6.card-content .supplier-container .suppliers div {
+            float: left;
+            margin-right: 20px; }
+        .result-card .col-lg-6.card-content .supplier-container .ratings .supplier-rating {
+          height: 18px;
+          float: left; }
+          .result-card .col-lg-6.card-content .supplier-container .ratings .supplier-rating .starRating {
+            width: 18px;
+            height: 18px;
+            float: left;
+            background-image: url("../Images/StarRating/star-icon.svg");
+            background-repeat: no-repeat; }
+            .result-card .col-lg-6.card-content .supplier-container .ratings .supplier-rating .starRating.lit {
+              background-image: url("../Images/StarRating/star-icon-enabled.svg");
+              background-repeat: no-repeat; }
+        .result-card .col-lg-6.card-content .supplier-container .ratings .trip-advisor-rating {
+          float: left;
+          margin-left: 10px;
+          font-size: 10px; }
+          .result-card .col-lg-6.card-content .supplier-container .ratings .trip-advisor-rating span {
+            margin-left: 5px; }
+          .result-card .col-lg-6.card-content .supplier-container .ratings .trip-advisor-rating .trip-advisor {
+            width: 16px;
+            height: 16px;
+            float: left; }
+            .result-card .col-lg-6.card-content .supplier-container .ratings .trip-advisor-rating .trip-advisor-logo {
+              background-image: url("../Images/TripAdvisorRating/trip-advisor-logo.svg");
+              background-repeat: no-repeat;
+              width: 28px;
+              height: 16px;
+              float: left;
+              margin: 0px 5px 0px 0px; }
+            .result-card .col-lg-6.card-content .supplier-container .ratings .trip-advisor-rating .trip-advisor.full {
+              background-image: url("../Images/TripAdvisorRating/trip-advisor-full.svg"); }
+            .result-card .col-lg-6.card-content .supplier-container .ratings .trip-advisor-rating .trip-advisor.half {
+              background-image: url("../Images/TripAdvisorRating/trip-advisor-half.svg"); }
+            .result-card .col-lg-6.card-content .supplier-container .ratings .trip-advisor-rating .trip-advisor.empty {
+              background-image: url("../Images/TripAdvisorRating/trip-advisor-empty.svg"); }
+    .result-card .col-lg-6 .shortlist-button {
+      position: absolute;
+      top: 20px;
+      right: 20px; }
