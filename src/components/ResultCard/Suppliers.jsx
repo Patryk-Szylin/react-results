@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SupplierRating from "./SupplierRating";
 import TripAdvisorRating from "./TripAdvisorRating";
+import CardSeperator from "./CardSeperator";
 class Suppliers extends Component {
   state = {};
   render() {
@@ -10,6 +11,7 @@ class Suppliers extends Component {
           <div>thomas Cook</div>
           <div>Manos</div>
         </div>
+        <CardSeperator />
         <div className="ratings">
           <SupplierRating />
           <TripAdvisorRating />
