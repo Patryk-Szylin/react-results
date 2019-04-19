@@ -12,7 +12,18 @@ import PriceBreakdown from "../PriceBreakdown";
 import CTAButton from "../CTAButton";
 
 class ResultCard extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      items: []
+    };
+  }
+
+  componentWillMount() {
+    this.setState({ items: this.props.items });
+  }
+
   render() {
     return (
       <div className="result-card row">
