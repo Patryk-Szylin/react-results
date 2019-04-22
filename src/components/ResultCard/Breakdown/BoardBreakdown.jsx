@@ -6,7 +6,7 @@ class BoardBreakdown extends Component {
     return (
       <div className="board-info">
         <div className="breakdown-icon board-icon" />
-        <div className="info">Self Catering</div>
+        <div className="info">{this.props.holiday.BoardBasis.Name}</div>
       </div>
     );
   }

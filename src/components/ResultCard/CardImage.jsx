@@ -5,7 +5,7 @@ class CardImage extends Component {
   render() {
     return (
       <div className="card-image-container">
-        <img src="https://one.trailstream.com/images/11012/page-030/A04A11-2-master.jpg" />
+        <img src={this.props.image} />
       </div>
     );
   }

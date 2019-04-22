@@ -12,37 +12,34 @@ import PriceBreakdown from "../PriceBreakdown";
 import CTAButton from "../CTAButton";
 
 class ResultCard extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      items: []
-    };
-  }
-
-  componentWillMount() {
-    this.setState({ items: this.props.items });
-  }
-
   render() {
+    const { holiday } = this.props;
+    console.log(holiday, "Holiday");
     return (
       <div className="result-card row">
         <div className="col-lg-6 card-image">
-          <CardImage />
+          <CardImage image={holiday.Accommodation.Image} />
         </div>
         <div className="col-lg-6 card-content">
-          <ResultCardTitle />
-          <Suppliers />
+          <ResultCardTitle
+            accommodation={holiday.Accommodation}
+            destination={holiday.Destination}
+          />
+          <Suppliers
+            brand={holiday.Brand}
+            review={holiday.Review}
+            accommodation={holiday.Accommodation}
+          />
           <CardSeperator />
           <ShortlistButton />
           <div className="result-breakdown">
-            <DateBreakdown />
-            <FlightBreakdown />
-            <BoardBreakdown />
-            <RoomBreakdown />
+            <DateBreakdown holiday={holiday} />
+            <FlightBreakdown holiday={holiday} />
+            <BoardBreakdown holiday={holiday} />
+            <RoomBreakdown holiday={holiday} />
           </div>
           <CardSeperator />
-          <PriceBreakdown />
+          <PriceBreakdown holiday={holiday} />
           <CTAButton />
         </div>
       </div>

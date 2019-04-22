@@ -4,8 +4,8 @@ class ResultCardTitle extends Component {
   render() {
     return (
       <div className="cardHeader">
-        <div className="title">Ekati 2</div>
-        <div className="subtitle">Kavos, Corfu, Greek Islands, Greece</div>
+        <div className="title">{this.props.accommodation.Name}</div>
+        <div className="subtitle">{this.props.destination.DestinationName}</div>
       </div>
     );
   }

@@ -5,16 +5,17 @@ import CardSeperator from "./CardSeperator";
 class Suppliers extends Component {
   state = {};
   render() {
+    var supplier = this.props.brand.Supplier ? this.props.brand.Supplier : null;
+
     return (
       <div className="supplier-container">
         <div className="suppliers">
-          <div className="supplier-logo TOP" />
-          <div className="supplier-logo MAN" />
+          <div className={"supplier-logo " + supplier.Code} />
         </div>
         <CardSeperator />
         <div className="ratings">
-          <SupplierRating />
-          <TripAdvisorRating />
+          <SupplierRating rating={this.props.accommodation.StarRating} />
+          <TripAdvisorRating review={this.props.review} />
         </div>
       </div>
     );

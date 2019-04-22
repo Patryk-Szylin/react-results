@@ -6,7 +6,10 @@ class FlightBreakdown extends Component {
     return (
       <div className="flight-info">
         <div className="breakdown-icon flight-icon" />
-        <div className="info">Aberdeen - Flight Details</div>
+        <div className="info">
+          {this.props.holiday.OutboundFlights[0].DepartureAirport.Name} - Flight
+          Details
+        </div>
       </div>
     );
   }

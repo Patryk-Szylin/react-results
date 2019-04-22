@@ -10,7 +10,7 @@ class App extends Component {
 
     this.state = {
       error: null,
-      isLoaded: false,
+      isLoading: true,
       items: []
     };
   }
@@ -27,20 +27,27 @@ class App extends Component {
         "api/SimpleSearch/Package/1/Spain/Newcastle/June/all-boards/all-suppliers",
       config
     ).then(res => {
-      console.log(res);
-      this.setState({ items: res.data });
-      console.log(this.state.items.HolidayResults.Holidays[0]);
+      this.setState({ items: res.data, isLoading: false });
     });
   }
 
   render() {
+    const { isLoading, error, items } = this.state;
+
     return (
-      <div className="App container">
-        <div className="row">
-          <h1>jdasidjasd</h1>
-          <ResultCard title={this.state.items} />
-        </div>
-      </div>
+      <React.Fragment>
+        {error ? <p>{error.message}</p> : null}
+
+        {!isLoading ? (
+          <div className="App container">
+            <div className="row">
+              <ResultCard holiday={items.HolidayResults.Holidays[0]} />
+            </div>
+          </div>
+        ) : (
+          <h3>Loading...</h3>
+        )}
+      </React.Fragment>
 
       // <div>sadksaod</div>
     );

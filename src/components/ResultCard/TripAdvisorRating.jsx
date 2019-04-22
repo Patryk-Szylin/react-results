@@ -11,7 +11,7 @@ class TripAdvisorRating extends Component {
         <div className="trip-advisor full" />
         <div className="trip-advisor half" />
         <div className="trip-advisor empty" />
-        <span>(314)</span>
+        <span>({this.props.review.TripAdvisorReviewCount})</span>
       </div>
     );
   }
